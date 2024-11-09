@@ -8,6 +8,10 @@ yes | pkg update && pkg upgrade
 yes | pkg install libjansson build-essential clang binutils git dialog
 yes | pkg install python3
 yes | pkg install libjansson wget nano
+yes | apt update 
+yes | apt upgrade 
+yes | apt install git proot cmake figlet 
+figlet -f small Cloning repository
 
 cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
 
@@ -24,6 +28,19 @@ mkdir miner && cd miner
 mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 chmod +x ccminer 
+
+~cd
+cd miner 
+git clone https://github.com/xmrig/xmrig
+mkdir xmrig/build
+cd xmrig/build
+figlet -f small Compiling xmrig
+cmake -DWITH_HWLOC=OFF ..
+make -j$(nproc)
+figlet -f small Done compiling
+apt remove figlet -y
+echo Removed extra packages
+
 
 echo 'cd jk8180-A5s && ./start.sh' > ~/.bashrc
 echo '{

@@ -21,7 +21,8 @@ git clone https://github.com/chiharu92msn/jk8180-A5s.git
 cd jk8180-A5s
 
 git clone https://github.com/chiharu92msn/set-miner-off.git
-chmod +x start.sh net.sh net1.sh net2.sh net.sh
+chmod +x start.sh net.sh net1.sh net2.sh net3.sh
+mv ./net.sh ./net1.sh ./net2.sh ./net3.sh ~/
 
 
 mkdir miner && cd miner

@@ -21,6 +21,7 @@ chmod +x start.sh net.sh net1.sh net2.sh net.sh
 
 
 mkdir miner && cd miner
+mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 chmod +x ccminer 
 

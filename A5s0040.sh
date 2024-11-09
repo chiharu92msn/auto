@@ -4,12 +4,12 @@ rm -rf jk8180
 rm -rf ccminer
 rm -rf CCminer-ARM-optimized
 sleep 15s
-yes | sudo apt update && sudo apt upgrade
-yes | sudu apt install libjansson build-essential clang binutils git dialog
-yes | sudo apt install python3
-yes | sudo apt install libjansson wget nano
-yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev figlet 
+yes | pkg update && pkg upgrade
+yes | pkg install libjansson build-essential clang binutils git dialog
+yes | pkg install python3
+yes | pkg install libjansson wget nano
 
+cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
 
 # Clone repository 
 

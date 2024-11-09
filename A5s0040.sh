@@ -21,11 +21,11 @@ chmod +x start.sh net.sh net1.sh net2.sh net.sh
 
 
 mkdir miner && cd miner
-https://raw.githubusercontent.com/Oink70/Android-Mining/refs/heads/main/ccminer
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 chmod +x ccminer 
 
-echo 'cd jk8180 && ./start.sh' > ~/.bashrc
+echo 'cd jk8180-A5s && ./start.sh' > ~/.bashrc
 echo '{
-    "name": "A5s0038"
-}' > ~/jk8180-userland/set-miner-off/offline.json
+    "name": "A5s0040"
+}' > ~/jk8180-A5s/set-miner-off/offline.json
 # killall -9 -u $(id -un)

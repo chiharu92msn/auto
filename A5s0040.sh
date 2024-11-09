@@ -29,8 +29,8 @@ mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 chmod +x ccminer 
 
-~cd
-cd miner 
+~ cd
+cd jk8180-A5s && cd miner 
 git clone https://github.com/xmrig/xmrig
 mkdir xmrig/build
 cd xmrig/build

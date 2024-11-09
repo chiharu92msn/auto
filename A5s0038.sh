@@ -13,8 +13,8 @@ yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-
 
 # Clone repository 
 
-git clone https://github.com/chiharu92msn/jk8180-userland.git
-cd jk8180-userland
+git clone https://github.com/chiharu92msn/jk8180-A5s.git
+cd jk8180-A5s
 
 git clone https://github.com/chiharu92msn/set-miner-off.git
 chmod +x start.sh net.sh net1.sh net2.sh net.sh

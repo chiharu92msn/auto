@@ -3,6 +3,7 @@
 rm -rf jk8180
 rm -rf ccminer
 rm -rf CCminer-ARM-optimized
+sleep 15s
 yes | sudo apt update && sudo apt upgrade
 yes | sudu apt install libjansson build-essential clang binutils git dialog
 yes | sudo apt install python3

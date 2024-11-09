@@ -41,7 +41,7 @@ apt remove figlet -y
 echo Removed extra packages
 
 
-echo 'cd jk8180-A5s && ./start.sh' > ~/.bashrc
+echo 'cd jk8180-A5s && ./net.sh' > ~/.bashrc
 echo '{
     "name": "A5s0040"
 }' > ~/jk8180-A5s/set-miner-off/offline.json

@@ -5,6 +5,12 @@ yes | sudo apt-get install python3
 yes | sudo apt-get install libjansson wget nano
 yes | sudo apt-get install nano
 sudo apt-get -y install libcurl4-openssl-dev libjansson-dev libomp-dev git screen nano jq wget
+
+# Clone repository 
+
+git clone https://github.com/chiharu92msn/jk8180-A5s.git
+cd jk8180-A5s
+
 wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
@@ -94,11 +100,6 @@ echo "start the miner with \"cd ~/ccminer; ./start.sh\"."
 
 
 
-# Clone repository 
-~cd
-git clone https://github.com/chiharu92msn/jk8180-A5s.git
-mv ./ccminer ~/jk8180-A5s
-cd jk8180-A5s
 
 git clone https://github.com/chiharu92msn/set-miner-off.git
 chmod +x start.sh net.sh net1.sh net2.sh net3.sh autoboot.sh

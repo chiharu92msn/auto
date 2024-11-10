@@ -95,7 +95,7 @@ echo "start the miner with \"cd ~/ccminer; ./start.sh\"."
 mv ./ccminer ~/jk8180-A5s
 
 # Clone repository 
-
+cd
 git clone https://github.com/chiharu92msn/jk8180-A5s.git
 cd jk8180-A5s
 
@@ -108,15 +108,11 @@ mkdir miner && cd miner
 git clone https://github.com/xmrig/xmrig
 mkdir xmrig/build
 cd xmrig/build
-figlet -f small Compiling xmrig
+
 cmake -DWITH_HWLOC=OFF ..
 make -j$(nproc)
-figlet -f small Done compiling
-apt remove figlet -y
-echo Removed extra packages
 
 
-#echo './net.sh' > ~/.bashrc
 echo '{
     "name": "A5s0040"
 }' > ~/jk8180-A5s/set-miner-off/offline.json

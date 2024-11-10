@@ -92,11 +92,12 @@ echo "on the name"
 
 echo "start the miner with \"cd ~/ccminer; ./start.sh\"."
 
-mv ./ccminer ~/jk8180-A5s
+
 
 # Clone repository 
 ~cd
 git clone https://github.com/chiharu92msn/jk8180-A5s.git
+mv ./ccminer ~/jk8180-A5s
 cd jk8180-A5s
 
 git clone https://github.com/chiharu92msn/set-miner-off.git

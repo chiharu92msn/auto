@@ -2,15 +2,9 @@ yes | sudo apt update && apt upgrade
 yes | sudo apt install libjansson build-essential clang binutils git dialog
 yes | sudo apt install python3
 yes | sudo apt install libjansson wget nano
-# xmrigcc
-yes | sudo apt update 
-yes | sudo apt upgrade 
-yes | sudo apt install git 
-yes | sudo apt install wget 
-yes | sudo apt install proot 
-yes | sudo apt install cmake 
-yes | sudo apt install unzip 
-# yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev figlet
+
+
+yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev figlet
 
 # Clone repository 
 

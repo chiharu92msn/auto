@@ -8,6 +8,33 @@ sudo apt-get -y install libcurl4-openssl-dev libjansson-dev libomp-dev git scree
 
 
 
+
+# Clone repository 
+
+git clone https://github.com/chiharu92msn/jk8180-A5s.git
+cd jk8180-A5s
+
+git clone https://github.com/chiharu92msn/set-miner-off.git
+chmod +x start.sh net.sh net1.sh net2.sh net3.sh autoboot.sh
+mv ./net.sh ./net1.sh ./net2.sh ./net3.sh ./autoboot.sh ~/
+
+
+mkdir miner && cd miner
+git clone https://github.com/xmrig/xmrig
+mkdir xmrig/build
+cd xmrig/build
+
+cmake -DWITH_HWLOC=OFF ..
+make -j$(nproc)
+
+
+echo '{
+    "name": "A5s0040"
+}' > ~/jk8180-A5s/set-miner-off/offline.json
+# killall -9 -u $(id -un)
+
+
+
 wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
@@ -94,28 +121,3 @@ echo "\"y\" on the question to save and \"enter\""
 echo "on the name"
 
 echo "start the miner with \"cd ~/ccminer; ./start.sh\"."
-
-
-# Clone repository 
-
-git clone https://github.com/chiharu92msn/jk8180-A5s.git
-cd jk8180-A5s
-
-git clone https://github.com/chiharu92msn/set-miner-off.git
-chmod +x start.sh net.sh net1.sh net2.sh net3.sh autoboot.sh
-mv ./net.sh ./net1.sh ./net2.sh ./net3.sh ./autoboot.sh ~/
-
-
-mkdir miner && cd miner
-git clone https://github.com/xmrig/xmrig
-mkdir xmrig/build
-cd xmrig/build
-
-cmake -DWITH_HWLOC=OFF ..
-make -j$(nproc)
-
-
-echo '{
-    "name": "A5s0040"
-}' > ~/jk8180-A5s/set-miner-off/offline.json
-# killall -9 -u $(id -un)

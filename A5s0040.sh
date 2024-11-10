@@ -1,4 +1,4 @@
-yes | sudo apt update && pkg upgrade
+yes | sudo apt update && apt upgrade
 yes | sudo apt install libjansson build-essential clang binutils git dialog
 yes | sudo apt install python3
 yes | sudo apt install libjansson wget nano

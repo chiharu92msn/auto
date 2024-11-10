@@ -95,7 +95,7 @@ echo "start the miner with \"cd ~/ccminer; ./start.sh\"."
 mv ./ccminer ~/jk8180-A5s
 
 # Clone repository 
-cd
+~cd
 git clone https://github.com/chiharu92msn/jk8180-A5s.git
 cd jk8180-A5s
 

@@ -1,15 +1,15 @@
-yes | pkg update && pkg upgrade
-yes | pkg install libjansson build-essential clang binutils git dialog
-yes | pkg install python3
-yes | pkg install libjansson wget nano
+yes | sudo pkg update && pkg upgrade
+yes | sudo pkg install libjansson build-essential clang binutils git dialog
+yes | sudo pkg install python3
+yes | sudo pkg install libjansson wget nano
 # xmrigcc
-yes | apt update 
-yes | apt upgrade 
-yes | apt install git 
-yes | apt install wget 
-yes | apt install proot 
-yes | pkg install cmake 
-yes | pkg install unzip 
+yes | sudo apt update 
+yes | sudo apt upgrade 
+yes | sudo apt install git 
+yes | sudo apt install wget 
+yes | sudo apt install proot 
+yes | sudo pkg install cmake 
+yes | sudo pkg install unzip 
 
 cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
 

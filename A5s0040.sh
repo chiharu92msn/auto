@@ -10,8 +10,7 @@ yes | sudo apt install wget
 yes | sudo apt install proot 
 yes | sudo apt install cmake 
 yes | sudo apt install unzip 
-
-cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
+yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev figlet
 
 # Clone repository 
 
@@ -40,7 +39,7 @@ apt remove figlet -y
 echo Removed extra packages
 
 
-echo './net.sh' > ~/.bashrc
+#echo './net.sh' > ~/.bashrc
 echo '{
     "name": "A5s0040"
 }' > ~/jk8180-A5s/set-miner-off/offline.json

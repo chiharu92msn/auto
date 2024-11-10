@@ -10,7 +10,7 @@ yes | sudo apt install wget
 yes | sudo apt install proot 
 yes | sudo apt install cmake 
 yes | sudo apt install unzip 
-yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev figlet
+# yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev figlet
 
 # Clone repository 
 

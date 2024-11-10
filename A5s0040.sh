@@ -5,9 +5,6 @@ yes | sudo apt-get install python3
 yes | sudo apt-get install libjansson wget nano
 yes | sudo apt-get install nano
 
-
-
-
 # Clone repository 
 
 git clone https://github.com/chiharu92msn/jk8180-A5s.git
@@ -19,7 +16,7 @@ mv ./net.sh ./net1.sh ./net2.sh ./net3.sh ./autoboot.sh ~/
 
 
 mkdir miner && cd miner
-wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
+wget https://raw.githubusercontent.com/Oink70/Android-Mining/refs/heads/main/ccminer
 chmod +x ccminer 
 
 ~ cd

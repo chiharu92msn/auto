@@ -103,11 +103,6 @@ mv ./net.sh ./net1.sh ./net2.sh ./net3.sh ./autoboot.sh ~/
 
 
 mkdir miner && cd miner
-wget https://raw.githubusercontent.com/Oink70/Android-Mining/refs/heads/main/ccminer
-chmod +x ccminer 
-
-cd
-cd jk8180-A5s && cd miner 
 git clone https://github.com/xmrig/xmrig
 mkdir xmrig/build
 cd xmrig/build

@@ -122,4 +122,5 @@ echo "on the name"
 
 echo "start the miner with \"cd ~/ccminer; ./start.sh\"."
 
+cd
 mv ./ccminer ~/jk8180-A5s
